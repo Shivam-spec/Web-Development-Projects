@@ -4,78 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web開発プロジェクト</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        header {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: white;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        section {
-            background-color: white;
-            margin-bottom: 30px;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        section h2 {
-            font-size: 2rem;
-            margin-bottom: 10px;
-        }
-        section ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        section ul li {
-            margin-bottom: 10px;
-        }
-        a {
-            color: #1E90FF;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .links {
-            display: flex;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-        }
-        .links a {
-            margin: 10px 20px;
-        }
-        .code {
-            background-color: #f9f9f9;
-            padding: 10px;
-            border-radius: 8px;
-            border: 1px solid #ddd;
-            font-family: 'Courier New', monospace;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: white;
-            font-size: 0.9rem;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -86,16 +14,17 @@
         <section>
             <h2>概要</h2>
             <p>
-                このリポジトリには、私が開発したウェブサイト、ホームページテンプレート、フルスタックアプリケーションなどが含まれています。
-                これらのプロジェクトは、HTML、CSS、Bootstrap、JavaScript、Node.js、React、Express.js、MongoDB、SQLの組み合わせを使用しています。
+                このリポジトリには、私が開発したウェブサイト、ホームページテンプレート、フルスタックアプリケーションなどが含まれています。<br>
+                これらのプロジェクトは、HTML、CSS、Bootstrap、JavaScript、Node.js、React、Express.js、MongoDB、SQLの組み合わせを使用しています。<br>
                 各プロジェクトはレスポンシブでユーザーフレンドリーに設計されており、モダンなWeb開発のさまざまな側面を示しています。
             </p>
-            <div class="links">
-                <a href="https://fashionhub.netlify.app" target="_blank">Fashion Hub</a>
-                <a href="https://animehubtemp.netlify.app" target="_blank">Anime Hub Template</a>
-                <a href="https://animetemp.netlify.app" target="_blank">Anime Template</a>
+            <p>
+                サイトのリンク: <br>
+                <a href="https://fashionhub.netlify.app" target="_blank">Fashion Hub</a><br>
+                <a href="https://animehubtemp.netlify.app" target="_blank">Anime Hub Template</a><br>
+                <a href="https://animetemp.netlify.app" target="_blank">Anime Template</a><br>
                 <a href="https://simpleporfile.netlify.app" target="_blank">Simple Profile</a>
-            </div>
+            </p>
         </section>
 
         <section>
@@ -116,31 +45,21 @@
         <section>
             <h2>セットアップ手順</h2>
             <p>以下の手順でプロジェクトをローカルにセットアップできます。</p>
-            <div class="code">
-                <pre><code>git clone https://github.com/<username>/Web-Development-Projects.git</code></pre>
-            </div>
+            <p><code>git clone https://github.com/<username>/Web-Development-Projects.git</code></p>
             <p>プロジェクトフォルダに移動します:</p>
-            <div class="code">
-                <pre><code>cd Web-Development-Projects/Project-Name</code></pre>
-            </div>
+            <p><code>cd Web-Development-Projects/Project-Name</code></p>
             <p>フルスタックのプロジェクトの場合、npmを使って依存関係をインストールします:</p>
-            <div class="code">
-                <pre><code>npm install</code></pre>
-            </div>
+            <p><code>npm install</code></p>
             <p>サーバーを開始します（該当する場合）:</p>
-            <div class="code">
-                <pre><code>npm start</code></pre>
-            </div>
+            <p><code>npm start</code></p>
             <p>ブラウザでアプリを開きます:</p>
-            <div class="code">
-                <pre><code>http://localhost:3000</code></pre>
-            </div>
+            <p><code>http://localhost:3000</code></p>
         </section>
 
         <section>
             <h2>貢献</h2>
             <p>
-                このリポジトリをフォークしたり、課題を作成したり、プルリクエストを送ったりすることができます。
+                このリポジトリをフォークしたり、課題を作成したり、プルリクエストを送ったりすることができます。<br>
                 バグ修正、機能改善、新しい機能の追加など、どんな貢献でも歓迎します。
             </p>
         </section>
