@@ -11,6 +11,12 @@ Web開発プロジェクト
 概要
 このリポジトリには、私が開発したウェブサイト、ホームページテンプレート、フルスタックアプリケーションなどが含まれています。これらのプロジェクトは、HTML、CSS、Bootstrap、JavaScript、Node.js、React、Express.js、MongoDB、SQLの組み合わせを使用しています。各プロジェクトはレスポンシブでユーザーフレンドリーに設計されており、モダンなWeb開発のさまざまな側面を示しています。
 
+サイトのリンク
+https://fashionhub.netlify.app
+https://animehubtemp.netlify.app
+https://animetemp.netlify.app
+https://simpleporfile.netlify.app
+
 使用技術
 HTML と CSS – フロントエンドの構造とスタイリングに使用。
 Bootstrap – レスポンシブでモバイルファーストのWebデザインに使用。
