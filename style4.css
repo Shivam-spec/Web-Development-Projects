@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'PT Sans Narrow',sans-serif;
+}
+.open{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 1000;     
+}
+.open .layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: top;
+    animation:open 1s ease-in-out forwards;
+}
+.open .layer:nth-child(1){
+    background: #000;
+    z-index: 2;
+}
+.open .layer:nth-child(2){
+    background: #fff;
+    animation-delay: 1s;
+    z-index: 1;
+}
+@keyframes open{
+    0%{
+        transform:scaleY(1);
+    }
+    100%{
+        transform:scaleY(0);
+    }
+}
+section{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(#333,#000);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.btext{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform:translateY(-50%);
+    max-width: 700px;
+}
+.btext h2,
+.btext h3{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    transform-origin: left;
+    text-transform: uppercase;
+    transform: scaleX(0);
+    animation: revealtextreverse 1s ease-in-out forwards;
+    color: #fff;
+}
+.btext h2{
+    font-size: 6em;
+    animation-delay: 2s;
+}
+.btext h3{
+    font-size: 3em;
+    animation-delay: 3s;
+}
+.btext h2:before,
+.btext h3:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    transform-origin: right;
+    animation: revealtext 1s ease-in-out forwards;
+    animation-delay: 3s;
+}
+.btext h3:before{
+    animation-delay: 4s; 
+}
+@keyframes revealtext{
+    0%{
+        transform: scaleX(1);
+    }
+    100%{
+        transform: scaleX(0);
+    }
+}
+@keyframes revealtextreverse{
+    0%{
+        transform: scaleX(0);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}
+.btext p{
+    opacity: 0;
+    font-weight: 400;
+    font-size: 1.2em;
+    animation: fadein 1s linear forwards;
+    animation-delay: 5s;
+    color: #fff;
+}
+@keyframes fadein{
+    0%{
+        opacity: 0;
+    }  
+    100%{
+        opacity: 1;
+    }
+}
+.btext a{
+    opacity: 0;
+    display: inline-block;
+    margin: 20px 0 0;
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    animation: fadeinb 0.5s linear forwards;
+    animation-delay: 5.5s;
+}
+.btext a:hover{
+    background-color: red;
+}
+@keyframes fadeinb{
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.pics{
+    opacity: 0;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    box-shadow: 0 0 10px black;
+    transform: translateY(-50%);
+    animation: fadein 1s linear forwards;
+    animation-delay: 6s;
+}
+#particles-js2{
+    height: 750px;
+    position: relative;
+}
+/* navigation bar */
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    background: #262626;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px black;
+    animation: fadeinC 0.5s linear backwards;    
+    animation-delay: 6.7s;
+    z-index: 1111;
+}
+@keyframes fadeinC{
+    0%{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+header .logo{
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    float: left;
+    font-weight: bold;
+}
+header nav{
+    float: right;
+}
+header nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+header nav ul li{
+    list-style: none;
+}
+header nav ul li a{
+    height: 50px;
+    line-height: 50px;
+    padding: 0 25px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+header nav ul li a:hover
+/* header nav ul li a.active */{
+    color: #fff;
+    background: red;
+}
+.menut{
+    color: #fff;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 991px){
+     header
+     {
+         padding: 0 20px;
+     }
+     .menut{
+         display: block;
+     }
+     header nav{
+         position: absolute;
+         width: 100%;
+         height: calc(100vh - 50px);
+         background: #333;
+         top: 50px;
+         left: -100%;
+         transition: 0.5s;
+     }
+     header nav.active{
+         left: 0;
+     }
+     header nav ul{
+         display: block;
+         text-align: center;
+     }
+     header nav ul li a{
+         border-bottom:1px solid rgba(0,0,0,0.2);
+
+     }
+}
