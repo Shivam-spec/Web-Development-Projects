@@ -1,0 +1,219 @@
+html,body {
+  /* min-height: 100%; */
+  position: relative;
+}
+
+/* .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+} */
+.navbar {
+    padding:1rem 0 2rem;
+    position: fixed;
+    border: 0;
+    width: 100%;
+    border-radius: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    background-image: linear-gradient(#000,transparent);
+    z-index: 10;
+}
+.navbar.scrolled{
+  background: #000 !important;
+  transition: 1s;
+}
+
+.navbar-brand{
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  /* font-weight: bold; */
+}
+.navbar-nav  li a:hover {
+    color: #1abc9c !important;
+}
+.nav-item{
+  padding: 0 18px;
+}
+
+.post-column{
+  padding: 3% 2%;
+}
+
+
+#background-carousel{
+	position: fixed;
+	width:100%;
+	height:100%;
+	z-index:-1;
+}
+.carousel,
+.carousel-inner {
+	width:100%;
+	height:100%;
+	z-index:0;
+	overflow:hidden;
+}
+.item1 {
+	width:100%;
+	height:100%;
+	background-position:center;
+	background-size:cover;
+	z-index:0;
+}
+.item2 {
+	width:100%;
+	height:100%;
+	background-position:center;
+	background-size:cover;
+	z-index:0;
+}
+.wrapper {
+  font-family: "Ubuntu";
+  padding-top: 150px;
+  color: #fff;
+  z-index:1 !important;
+}
+.wrapper2{
+  font-family: "Ubuntu";
+  padding-top: 150px;
+}
+.edit1{
+  padding-left: 20px;
+  font-style: italic;
+  background-color: #000;
+  color: #fff;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+  margin-bottom: 0;
+}
+.edit2{
+  font-style: italic;
+  background-color: black;
+  padding: 20px 20px 20px 20px;
+  max-height: 1000px;
+  color: #fff;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+.row{
+  margin-top: 50px;
+}
+.card{
+  background-color: transparent;
+  max-width: 300px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  transition:0.3s ease-in-out;
+}
+.card:hover{
+  box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+  height: 300px;
+}
+.card-header{
+  background-color: transparent;
+  font-family: "Ubuntu";
+  padding:0 0 0 0;
+  margin: 0 80px 0 80px;
+  text-align: center;
+  color: #fff;
+}
+
+.special-card{
+  color: #fff;
+  font-style: italic;
+  position: relative;
+  width: 260px;
+  height: 260px;
+}
+.card-footer a{
+  color: white;
+}
+.card-footer:hover{
+  background-color: black;
+  transition: o.5s;
+}
+
+.footer-padding {
+	padding-bottom: 600px;
+}
+
+.footer {
+  position: absolute;
+  text-align: center;
+	bottom: 0px;
+	width: 100%;
+	height: 60px;
+  background-color: #000;
+  z-index: 1;
+}
+
+.footer p {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 12px;
+  color: #fff;
+  margin-bottom: 0px;
+}
+
+.form-control{
+  background-color: transparent;
+}
+
+.btn{
+  background-color: transparent;
+  border-color: #fff;
+}
+.btn:hover{
+  background-color: black;
+  border-color: #fff;
+}
+
+
+
+.heading{
+  position: relative;
+  margin-left: 180px;
+  margin-top: 50px;
+  margin-bottom: 150px;
+  font-weight: 300;
+  font-size: 5rem;
+  display: inline-block;
+  transform-origin: left;
+  text-transform: uppercase;
+  transform: scaleX(0);
+  animation: revealtextreverse 1s ease-in-out forwards;
+  color: #fff;
+}
+.heading:before{
+  content: '';
+  position: absolute;
+  font-size: 5rem;
+  padding-left: 200px;
+  top: 0;
+  left: 0;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  transform-origin: right;
+  animation: revealtext 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
+@keyframes revealtext{
+  0%{
+      transform: scaleX(1);
+  }
+  100%{
+      transform: scaleX(0);
+  }
+}
+@keyframes revealtextreverse{
+  0%{
+      transform: scaleX(0);
+  }
+  100%{
+      transform: scaleX(1);
+  }
+}
+
+
+
+
